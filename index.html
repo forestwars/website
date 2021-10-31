@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from area-omni.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Oct 2021 23:26:15 GMT -->
+<head>
+  <script src="VHS.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Omni</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&amp;display=swap');
+  div.a {
+  font-size: 16px;
+  color: green;
+}
+  </style>
+  </head>
+  <body>
+    <div class="buzz_wrapper">
+  <div class="text">
+  <span style="font-size:30px">Welcome, USER, to Area OMNI's database.
+  <p class="description">Please enter your Username as well as your PassKey<br>to login to your division.
+  If you have yet to receive<br>your PassKey or you'd like to explore what the location<br>has to offer, please enter the default username (USER)<br>with the default PassKey (ZZZ000)</p>
+  
+   <form name="login" STYLE="position:absolute; TOP:300px; LEFT:150px">
+Username:<input type="text" name="userid"/> <input type="button" onclick="check(this.form)" value="Login"/><br>
+Password:<input type="password" name="pswrd"/>
+<input type="reset" value="Cancel"/>
+</form>
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "USER" && form.pswrd.value == "ZZZ000")
+  {
+    window.open('gate.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script></span>
+  </div>
+  <div class="scanline"></div>
+
+  </div>
+  </body>
+
+<!-- Mirrored from area-omni.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Oct 2021 23:26:15 GMT -->
+</html>
